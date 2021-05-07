@@ -35,7 +35,7 @@ function App() {
           <h1 className="title">Dark Mode Challenge</h1>
         </div>
 
-        {/* --The button that should toggle dark mode-- */}
+        
         <button className="app__dark-mode-btn icon level-right" onClick={handelDarkmode}>
           <FontAwesomeIcon icon={faMoon} />
         </button>
