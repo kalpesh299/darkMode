@@ -1,0 +1,80 @@
+$mode-color: #121212;
+$title-color: #bb86fc;
+$para-color: white;
+$moon-color: rgb(236, 196, 17);
+$input-color: rgba(255, 255, 255, 0.2);
+$btn-ocolor: #bb86fc;
+$btn-tcolor: #03dac6;
+
+.app {
+  padding: 10%;
+  max-width: 1000px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  box-sizing: content-box;
+
+  &__dark-mode-btn {
+    border: 0;
+    background: transparent;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+  &__dark-mode-btn.dark {
+    color: $moon-color;
+  }
+
+  .buttons > .button {
+    height: 30px;
+    width: 100px;
+  }
+}
+.app.dark {
+  background-color: $mode-color;
+}
+
+.title.dark {
+  color: $title-color;
+}
+
+.is-primary.dark {
+  background-color: $btn-ocolor;
+  color: $mode-color;
+}
+
+.is-link.dark {
+  background-color: $btn-tcolor;
+  color: $mode-color;
+  opacity: 75%;
+}
+
+p.dark {
+  color: $para-color;
+  opacity: 87%;
+}
+
+input.dark {
+  background: $input-color;
+  color: white;
+  &::placeholder {
+    color: white;
+  }
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &:focus {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
