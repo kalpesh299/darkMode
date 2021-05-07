@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon } from '@fortawesome/free-solid-svg-icons';
+import { faSun } from '@fortawesome/free-solid-svg-icons';
 import '../styles/_app.scss';
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
 
         
         <button className="app__dark-mode-btn icon level-right" onClick={handelDarkmode}>
-          <FontAwesomeIcon icon={faMoon} />
+        {clicked.status? <FontAwesomeIcon icon={faSun} />:<FontAwesomeIcon icon={faMoon} />}                 
         </button>
 
       </div>
